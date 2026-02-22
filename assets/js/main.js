@@ -89,22 +89,6 @@
     setInterval(() => show(idx + 1), 5000);
   }
 
-  const pricing = document.querySelector('[data-pricing]');
-  if (pricing) {
-    const toggleButtons = pricing.querySelectorAll('[data-cycle]');
-    const values = pricing.querySelectorAll('[data-monthly][data-annual]');
-
-    toggleButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const cycle = btn.dataset.cycle;
-        toggleButtons.forEach((b) => b.classList.toggle('active', b === btn));
-        values.forEach((v) => {
-          v.textContent = cycle === 'annual' ? v.dataset.annual : v.dataset.monthly;
-        });
-      });
-    });
-  }
-
   const roiForm = document.querySelector('[data-roi]');
   if (roiForm) {
     const users = roiForm.querySelector('[name="users"]');

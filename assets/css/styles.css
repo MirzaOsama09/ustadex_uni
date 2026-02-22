@@ -524,6 +524,8 @@ button.btn {
   border-radius: var(--radius-lg);
   padding: 1.1rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .price-card.featured {
@@ -532,6 +534,11 @@ button.btn {
     linear-gradient(#fff, #fff) padding-box,
     linear-gradient(130deg, var(--primary), var(--primary-2)) border-box;
   border: 1px solid transparent;
+}
+
+.price-card a {
+  margin-top: auto;
+  align-self: flex-end;
 }
 
 .badge {
