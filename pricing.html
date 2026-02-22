@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing | Ustadex</title>
+  <meta name="description" content="Flexible pricing for universities and educational institutes adopting Ustadex." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark"></span><span>Ustadex</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="platform.html">Platform</a>
+        <a href="solutions.html">Solutions</a>
+        <a class="active" href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="pricing.html">View Plans</a>
+        <a class="btn btn-primary" href="contact.html">Book Demo</a>
+      </div>
+      <button class="menu-btn" type="button" data-menu>?</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container reveal" data-pricing>
+      <span class="eyebrow">Pricing</span>
+      <h1 class="section-title">Choose a plan that matches your institution's scale</h1>
+      <p class="section-subtitle">Start lean and expand as more departments and campuses adopt Ustadex.</p>
+
+      <div class="pricing-toggle">
+        <button type="button" class="active" data-cycle="monthly">Monthly</button>
+        <button type="button" data-cycle="annual">Annual (Save 20%)</button>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter Campus</h3>
+          <p>For institutes beginning structured KPI governance.</p>
+          <div class="amount">$<span data-monthly="499" data-annual="399">499</span> <small>/ month</small></div>
+          <ul class="price-list">
+            <li>Up to 80 users</li>
+            <li>KPI governance core module</li>
+            <li>Basic dashboarding</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn btn-secondary" href="contact.html">Start Trial</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="badge">Most Popular</span>
+          <h3>Growth University</h3>
+          <p>For multi-department universities with active compliance cycles.</p>
+          <div class="amount">$<span data-monthly="1299" data-annual="1039">1299</span> <small>/ month</small></div>
+          <ul class="price-list">
+            <li>Up to 350 users</li>
+            <li>AI evidence ingestion</li>
+            <li>Advanced analytics + trends</li>
+            <li>Accreditation reporting packs</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html">Book Demo</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Enterprise Network</h3>
+          <p>For large institutions and higher education groups.</p>
+          <div class="amount">$<span data-monthly="2499" data-annual="1999">2499</span> <small>/ month</small></div>
+          <ul class="price-list">
+            <li>Unlimited users and campuses</li>
+            <li>Custom integrations</li>
+            <li>Dedicated success manager</li>
+            <li>Private deployment options</li>
+          </ul>
+          <a class="btn btn-secondary" href="contact.html">Contact Sales</a>
+        </article>
+      </div>
+    </div>
+
+    <div class="container section reveal">
+      <span class="eyebrow">ROI Estimator</span>
+      <h2 class="section-title">Estimate operational savings</h2>
+      <p class="section-subtitle">Approximate monthly savings from reduced manual reporting and evidence handling.</p>
+      <div class="contact-grid" data-roi>
+        <div class="form-card">
+          <div class="form-group">
+            <label for="users">Number of active staff members</label>
+            <input id="users" name="users" type="number" value="40" min="1" />
+          </div>
+          <div class="form-group">
+            <label for="hours">Hours saved per person per month</label>
+            <input id="hours" name="hours" type="number" value="6" min="1" />
+          </div>
+          <div class="form-group">
+            <label for="rate">Average hourly cost (USD)</label>
+            <input id="rate" name="rate" type="number" value="18" min="1" />
+          </div>
+        </div>
+        <div class="info-card">
+          <h3>Estimated Savings</h3>
+          <p class="kpi" data-roi-output>$4,320 / month</p>
+          <p>Use this estimate to compare internal process cost against subscription cost.</p>
+          <a class="btn btn-primary" href="contact.html">Get Exact ROI Analysis</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div><a class="logo" href="index.html"><span class="logo-mark"></span><span>Ustadex</span></a><p>Data intelligence platform for higher education excellence.</p></div>
+      <div class="footer-links"><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
