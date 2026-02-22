@@ -14,7 +14,7 @@
   --radius-xl: 24px;
   --radius-lg: 16px;
   --radius-md: 12px;
-  --container: min(1160px, 92vw);
+  --container: min(1240px, 96vw);
 }
 
 * {
@@ -392,6 +392,50 @@ button.btn {
   margin-top: 1.7rem;
 }
 
+.video-showcase {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.video-frame {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 0.7rem;
+}
+
+.video-frame video,
+.video-frame iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 0.9rem;
+  background: #0b1220;
+  aspect-ratio: 16 / 9;
+}
+
+.video-meta {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-meta h3 {
+  margin-top: 0.1rem;
+}
+
+.video-meta .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -603,6 +647,15 @@ button.btn {
   flex-wrap: wrap;
 }
 
+.cta-band .btn-secondary {
+  background: #ffffff;
+  color: #155eef;
+}
+
+.cta-band .btn-secondary:hover {
+  background: #eef4ff;
+}
+
 .contact-grid {
   margin-top: 1.3rem;
   display: grid;
@@ -683,6 +736,7 @@ footer {
 @media (max-width: 1020px) {
   .hero-grid,
   .showcase,
+  .video-showcase,
   .contact-grid {
     grid-template-columns: 1fr;
   }
