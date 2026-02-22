@@ -666,7 +666,7 @@ button.btn {
 .contact-grid {
   margin-top: 1.3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 3fr;
   gap: 1rem;
 }
 
