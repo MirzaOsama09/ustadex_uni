@@ -1,0 +1,56 @@
+<svg width="320" height="180" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="20" y1="18" x2="302" y2="162" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0F766E"/>
+    <stop offset="1" stop-color="#155EEF"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="42" y1="40" x2="284" y2="148" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#EDF4FF"/>
+  </linearGradient>
+</defs>
+<rect x="6" y="6" width="308" height="168" rx="18" fill="url(#bg)"/>
+<rect x="20" y="20" width="280" height="140" rx="14" fill="url(#panel)"/>
+<rect x="34" y="38" width="78" height="24" rx="8" fill="#F3F7FF" stroke="#D8E3F5"/>
+<rect x="42" y="44" width="12" height="12" rx="3" fill="#155EEF" opacity="0.2"/>
+<path d="M44 50H48M46 48V52M50 47H53V50M50 53H53V50" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round"/>
+<text x="60" y="54" fill="#155EEF" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">API</text>
+
+<rect x="34" y="70" width="78" height="24" rx="8" fill="#F3F7FF" stroke="#D8E3F5"/>
+<rect x="41" y="75" width="14" height="14" rx="2" fill="#16A34A" opacity="0.22"/>
+<path d="M44 78L52 86M52 78L44 86" stroke="#16A34A" stroke-width="1.8" stroke-linecap="round"/>
+<text x="60" y="86" fill="#0F766E" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">Excel</text>
+
+<rect x="34" y="102" width="78" height="24" rx="8" fill="#F3F7FF" stroke="#D8E3F5"/>
+<rect x="41" y="106" width="14" height="5" rx="2.5" fill="#155EEF" opacity="0.8"/>
+<rect x="41" y="114" width="14" height="5" rx="2.5" fill="#155EEF" opacity="0.5"/>
+<text x="60" y="118" fill="#155EEF" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">System</text>
+
+<rect x="122" y="56" width="86" height="52" rx="12" fill="#155EEF" opacity="0.15"/>
+<rect x="132" y="68" width="66" height="8" rx="4" fill="#AFC4EC"/>
+<rect x="132" y="82" width="52" height="8" rx="4" fill="#C8D7F4"/>
+<text x="145" y="100" fill="#155EEF" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700">USTADEX</text>
+
+<path d="M112 50H122" stroke="#155EEF" stroke-width="3" stroke-linecap="round"/>
+<path d="M112 82H122" stroke="#155EEF" stroke-width="3" stroke-linecap="round"/>
+<path d="M112 114H122" stroke="#155EEF" stroke-width="3" stroke-linecap="round"/>
+
+<rect x="220" y="44" width="68" height="20" rx="10" fill="#0F766E" opacity="0.18"/>
+<ellipse cx="232" cy="54" rx="6" ry="3.2" fill="#0F766E"/>
+<path d="M226 54V59C226 60.8 228.7 62.3 232 62.3C235.3 62.3 238 60.8 238 59V54" stroke="#0F766E" stroke-width="1.6"/>
+<text x="243" y="57" fill="#0F766E" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700">DBs</text>
+
+<rect x="220" y="72" width="68" height="20" rx="10" fill="#155EEF" opacity="0.17"/>
+<rect x="226" y="78" width="12" height="8" rx="2" fill="#155EEF"/>
+<rect x="230" y="75" width="4" height="2" rx="1" fill="#155EEF"/>
+<text x="243" y="85" fill="#155EEF" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700">ERP/LMS</text>
+
+<rect x="220" y="100" width="68" height="20" rx="10" fill="#0F766E" opacity="0.18"/>
+<rect x="226" y="105" width="12" height="4" rx="2" fill="#0F766E"/>
+<rect x="226" y="111" width="12" height="4" rx="2" fill="#0F766E" opacity="0.75"/>
+<text x="243" y="113" fill="#0F766E" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700">DataLake</text>
+
+<path d="M208 82H220" stroke="#155EEF" stroke-width="3" stroke-linecap="round"/>
+<path d="M214 82L208 76M214 82L208 88" stroke="#155EEF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
