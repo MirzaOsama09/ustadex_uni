@@ -2,12 +2,13 @@
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="360" y2="120" gradientUnits="userSpaceOnUse">
       <stop stop-color="#155eef"/>
-      <stop offset="1" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#0f766e"/>
     </linearGradient>
   </defs>
   <rect x="2" y="2" width="356" height="116" rx="20" fill="white" stroke="#D7E1EF" stroke-width="2"/>
   <rect x="18" y="18" width="84" height="84" rx="18" fill="url(#g)"/>
-  <text x="60" y="70" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">NCEAC</text>
+  <rect x="24" y="24" width="72" height="72" rx="14" fill="white"/>
+  <image href="nceac.jpg" x="24" y="24" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
   <text x="118" y="52" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">NCEAC</text>
   <text x="118" y="76" fill="#51607A" font-family="Segoe UI, Arial, sans-serif" font-size="12">Computing Accreditation Council</text>
 </svg>
