@@ -512,16 +512,21 @@ button.btn {
 
 .roadmap-flow {
   margin: 1.6rem auto 0;
-  max-width: 920px;
+  max-width: 1100px;
   display: grid;
   gap: 1.45rem;
-  justify-items: center;
+}
+
+.roadmap-line {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 1.1rem;
 }
 
 .roadmap-row {
-  width: 100%;
-  max-width: 860px;
-  position: relative;
+  width: min(100%, 520px);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -533,22 +538,77 @@ button.btn {
   gap: 0.85rem;
 }
 
-.roadmap-row:not(:last-child)::after {
-  content: "\2193";
-  position: absolute;
-  left: 50%;
-  bottom: -1.05rem;
-  transform: translateX(-50%);
-  width: 1.85rem;
-  height: 1.85rem;
-  border-radius: 999px;
-  display: grid;
-  place-content: center;
-  color: #155eef;
-  background: #edf3ff;
-  border: 1px solid #cbd8f3;
-  font-size: 1rem;
-  line-height: 1;
+.roadmap-line.left .roadmap-row {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.roadmap-line.left .flow-arrow {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.roadmap-line.right .roadmap-row {
+  grid-column: 2;
+  justify-self: end;
+}
+
+.roadmap-line.right .flow-arrow {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.flow-arrow {
+  width: min(420px, 85%);
+  /* height: 72px; */
+  display: block;
+  margin: 0;
+  overflow: visible;
+}
+
+.flow-arrow path {
+  stroke-linecap: round;
+  will-change: stroke-dashoffset;
+}
+
+.flow-1-2 path {
+  animation: flow-dash-10 0.9s linear infinite;
+}
+
+.flow-2-3 path {
+  animation: flow-dash-7 0.75s linear infinite;
+}
+
+.flow-3-4 path {
+  animation: flow-dash-10 0.9s linear infinite;
+}
+
+.flow-4-5 path {
+  animation: flow-dash-9 0.82s linear infinite;
+}
+
+.flow-5-6 path {
+  animation: flow-dash-12 1s linear infinite;
+}
+
+@keyframes flow-dash-7 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -7; }
+}
+
+@keyframes flow-dash-9 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -9; }
+}
+
+@keyframes flow-dash-10 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -10; }
+}
+
+@keyframes flow-dash-12 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -12; }
 }
 
 
@@ -961,7 +1021,28 @@ footer {
   }
 
   .roadmap-row {
+    width: 100%;
     grid-template-columns: 1fr;
+    justify-self: stretch;
+  }
+
+  .roadmap-line {
+    grid-template-columns: 1fr;
+    row-gap: 0.65rem;
+  }
+
+  .roadmap-line.left .roadmap-row,
+  .roadmap-line.right .roadmap-row,
+  .roadmap-line.left .flow-arrow,
+  .roadmap-line.right .flow-arrow {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .flow-arrow {
+    width: 180px;
+    height: 62px;
+    display: none;
   }
 
   .pricing-grid,
