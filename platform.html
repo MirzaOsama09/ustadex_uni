@@ -1,0 +1,444 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+<style>
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   HERO BACKGROUND
+   ========================================================= */
+
+.hero-header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero-header-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("assets/img/bg/herobg8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-header-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 12, 35, 0.92) 0%,
+      rgba(5, 18, 48, 0.82) 45%,
+      rgba(9, 28, 65, 0.72) 100%
+    );
+}
+
+.hero-header-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 40, 142, 0.10) 0%,
+      rgba(0, 40, 142, 0.04) 65%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+}
+
+.hero-text {
+  color: #ffffff;
+}
+
+.hero-muted {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.hero-secondary-button {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.hero-secondary-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================================================
+   RANKING BODIES CAROUSEL
+   ========================================================= */
+
+.ranking-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.ranking-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: ranking-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.ranking-carousel:hover .ranking-track {
+  animation-play-state: paused;
+}
+
+.ranking-logo {
+  height: 120px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ranking-logo img {
+  height: 96px;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.ranking-logo:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes ranking-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ranking-track {
+    animation-duration: 24s;
+  }
+
+  .ranking-logo {
+    height: 100px;
+    min-width: 170px;
+  }
+
+  .ranking-logo img {
+    height: 82px;
+    max-width: 150px;
+  }
+}
+</style>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="fixed top-0 left-0 w-full z-50 bg-[#ffffff]/90 backdrop-blur-xl border-b border-[#eaedff] shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+
+  <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-8">
+
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity no-underline text-inherit">
+
+      <img
+        alt="Ustadex Insights"
+        class="h-9 w-auto object-contain"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3nc02XAA55yPgg5EQZ_Lkgt-sCzKwks7Iwv-8g71ayRRU71AiAS-bUM2Oq0Q737f8SZBIKWJP-JrCU6tfDS2wEy8F3IyMD3aHYUaPCCRpWw937oZbGh5Sy7-kwrXdMTc4tSxg19mypywLywEmfVgdfk98R3rHVvC7dBP1Vm-OaE956VBiz2co7wjr8PFDgKugihEmAZdYy3BrQHVaY5Cqd6CfhrQnexnvYolNiHX2U8V749dUooarOubnOcu4QcElXYk"
+      >
+
+      <div class="flex flex-col">
+
+        <span class="font-headline-sm text-headline-sm tracking-tight text-[#131b2e] font-bold leading-tight">
+          Ustadex Insights
+        </span>
+
+        <!-- <span class="font-caption text-caption text-[#444653] font-medium">
+          Institutional Intelligence
+        </span> -->
+
+      </div>
+
+    </a>
+
+
+    <nav class="hidden lg:flex items-center gap-8">
+
+      <a class="text-base font-semibold tracking-wide text-[#444653] hover:text-[#131b2e] transition-colors" data-path="home" href="index.html">
+        Home
+      </a>
+
+      <a class="font-label-lg text-label-lg text-[#006a61] transition-colors" data-path="platform" href="platform.html">
+        Platform
+      </a>
+
+      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="solutions" href="solutions.html">
+        Solutions
+      </a>
+
+      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="pricing" href="pricing.html">
+        Pricing
+      </a>
+
+      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="about" href="about.html">
+        About
+      </a>
+
+      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="contact" href="contact.html">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <div class="flex items-center">
+
+      <a
+        class="inline-flex items-center justify-center bg-[#1e40af] hover:bg-[#3755c3] text-[#ffffff] font-label-lg text-label-lg px-6 py-3 rounded-lg shadow-sm transition-all duration-200"
+        data-path="book-a-demo"
+        href="contact.html"> Book a Demo
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+
+
+
+
+
+  <main class="section">
+    <div class="container reveal">
+      <span class="eyebrow">Product Tour</span>
+      <h1 class="section-title">A modular platform that adapts to your quality and performance framework</h1>
+      <p class="section-subtitle">Choose only the modules your institution needs and expand as your digital governance matures.</p>
+
+      <div class="showcase" data-tabs>
+        <div>
+          <div class="tabs">
+            <button class="tab-btn active" type="button" data-tab="governance">Governance</button>
+            <button class="tab-btn" type="button" data-tab="evidence">Evidence</button>
+            <button class="tab-btn" type="button" data-tab="analytics">Analytics</button>
+            <button class="tab-btn" type="button" data-tab="reporting">Reporting</button>
+          </div>
+
+          <article class="panel active" data-panel="governance">
+            <h3>Role-Based KPI Governance</h3>
+            <p>Create KPI trees, assign custodians, set due dates, and route approvals with complete accountability.</p>
+            <ul>
+              <li>Department, faculty, and central office role controls</li>
+              <li>Escalation paths and overdue alerts</li>
+              <li>Validation workflows and status tracking</li>
+            </ul>
+          </article>
+
+          <article class="panel" data-panel="evidence">
+            <h3>Spend 70% less time preparing evidence with AI-powered ingestion</h3>
+            <p>Reduce manual collection effort by automatically classifying, mapping, and linking documents to indicators.</p>
+            <ul>
+              <li>OCR-friendly ingestion pipeline</li>
+              <li>Evidence-to-indicator mapping</li>
+              <li>Audit trail with time-stamped history</li>
+            </ul>
+          </article>
+
+          <article class="panel" data-panel="analytics">
+            <h3>Advanced Trend Intelligence</h3>
+            <p>Understand pattern shifts, risk indicators, and strategic opportunities before ranking cycles begin.</p>
+            <ul>
+              <li>Benchmark comparison views</li>
+              <li>Forecasting and variance tracking</li>
+              <li>Explainable AI recommendations</li>
+            </ul>
+          </article>
+
+          <article class="panel" data-panel="reporting">
+            <h3>Dynamic Reporting Engine</h3>
+            <p>Build board reports, accreditation packs, and decision briefs without manual spreadsheet consolidation.</p>
+            <ul>
+              <li>Custom templates per accreditor</li>
+              <li>Export-ready charts and summaries</li>
+              <li>One-click stakeholder dashboards</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mockup">
+          <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <div class="card">
+            <p>Live Quality Dashboard</p>
+            <div class="kpi">96.2%</div>
+            <small>Institution-wide compliance readiness</small>
+          </div>
+          <div class="feature-grid" style="margin-top: 0.8rem;">
+            <article class="feature-card"><h3>14</h3><p>Accreditation standards mapped</p></article>
+            <article class="feature-card"><h3>1,842</h3><p>Evidence artifacts indexed</p></article>
+            <article class="feature-card"><h3>87%</h3><p>Auto-validation confidence</p></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat"><strong data-counter="23">0</strong><span>Framework templates</span></article>
+        <article class="stat"><strong data-counter="99">0</strong><span>Workflow transparency</span></article>
+        <article class="stat"><strong data-counter="68">0</strong><span>Faster report prep</span></article>
+        <article class="stat"><strong data-counter="100">0</strong><span>Evidence traceability</span></article>
+      </div>
+
+      <div class="cta-band">
+        <div>
+          <h3>Need a tailored module map?</h3>
+          <p>We can recommend the best rollout sequence for your university in one strategy call.</p>
+        </div>
+        <a class="btn btn-secondary" href="contact.html">Talk to Product Team</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-[#283044] text-[#eef0ff] border-t border-[#c4c5d5]/20 pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-[#c4c5d5]/15">
+      <div class="lg:col-span-3 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="p-1 bg-[#ffffff] rounded-md inline-flex">
+            <img alt="Ustadex Insights" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANiRGxWfH5wCPpvlPWHauDJ4O5606FclzREpDrw0z7a5m-S2Ewc82Ho_QCatJntm7E4AO0vivIiwJHqYoUdY64YhcpoXVGk4FhqE6qe_vT0kthT2oOgnfoUJQV7IqbdHAxpVP3Kn0VYLwcFYds8fC9pg-zq1LH0XviFdHBif8qicdVRvQrx1alqDrTnZiRWniS6KbrIpO7ej5K5kN5AsmU8kHDsnowq_S3vZyA30wPKdxHzHmMwlH5qiUUyDCWGxAK_8s">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm font-bold text-[#ffffff] tracking-tight">Ustadex Insights</span>
+            <span class="font-caption text-caption text-[#d2d9f4]">Institutional Intelligence</span>
+          </div>
+        </div>
+        <p class="font-body-sm text-body-sm text-[#d2d9f4] max-w-sm leading-relaxed">
+          Institutional data intelligence for higher education. Streamlining accreditation, ranking alignment, and leadership decisions.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Platform</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Analytics Suite</a></li>
+          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Accreditation Tracking</a></li>
+          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Ranking Readiness</a></li>
+          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Evidence Intelligence</a></li>
+          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Reports &amp; Dashboards</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Solutions</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">University Leadership</a></li>
+          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Quality &amp; Accreditation</a></li>
+          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Institutional Performance</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Company</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+          <li><a data-path="about" href="about.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">About Ustadex</a></li>
+          <li><a data-path="contact" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Contact</a></li>
+          <li><a data-path="book-a-demo" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Book a Demo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-caption text-caption text-[#d2d9f4]">
+      <p>c 2025 Ustadex Insights. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-privacy" href="#">Privacy Policy</a>
+        <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-terms" href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
