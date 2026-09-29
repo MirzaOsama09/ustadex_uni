@@ -14,7 +14,7 @@
 
 <style>
 @layer base {
-  html, body { margin: 0; padding: 0; }
+  html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
   body { overscroll-behavior: none; }
   main > :first-child { margin-top: 0 !important; }
   main > :last-child { margin-bottom: 0 !important; }
@@ -25,7 +25,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="assets/js/tailwind-config.js"></script>
 </head>
-<body class="bg-[#f8f9fc] font-body-md text-[#444653]">
+<body class="bg-surface-container-low font-body-md text-[#444653]">
 <header class="fixed top-0 left-0 w-full z-50 bg-[#ffffff]/90 backdrop-blur-xl border-b border-[#eaedff] shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
 
   <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-8">
@@ -90,9 +90,9 @@
 
 </header>
 
-<main class="w-full bg-[#f8f9fc] min-h-screen">
+<main class="w-full bg-surface-container-low min-h-screen">
   
-  <section class="w-full pt-32 pb-16 lg:pt-40 lg:pb-24 bg-[#f8f9fc]">
+  <section class="w-full pt-32 pb-16 lg:pt-40 lg:pb-24 bg-surface-container-low">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
       <span class="text-[#006a61] font-bold text-sm tracking-wider uppercase mb-4 block">Platform Tour</span>
       <h1 class="font-headline-xl text-[40px] lg:text-[48px] text-[#131b2e] font-bold tracking-tight mb-6">
@@ -102,75 +102,93 @@
         Take a closer look at our smart dashboards, automated reports, and the central data hub driving university decisions.
       </p>
 
-      <!-- 16-Image Grid -->
+      <!-- Gallery Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.38 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.57.20 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.38 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.57.21 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.39 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.57.22 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.39 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.57.22 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.57.23 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (10).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.59.25 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (11).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.59.25 PM (2).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (2).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.59.25 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (3).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.59.50 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (4).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 4.59.50 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (5).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.00.12 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (6).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.00.12 PM (2).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (7).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.00.12 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (8).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.01.25 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (9).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.01.32 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
-        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.01.54 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.01.54 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.01.55 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.08.37 PM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.08.37 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="gallery-item overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/ordered/WhatsApp Image 2026-09-29 at 5.11.13 PM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -194,38 +212,37 @@
         </p>
       </div>
 
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Platform</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Analytics Suite</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Accreditation Tracking</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Ranking Readiness</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Evidence Intelligence</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Reports &amp; Dashboards</a></li>
-        </ul>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Solutions</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">University Leadership</a></li>
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Quality &amp; Accreditation</a></li>
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Institutional Performance</a></li>
-        </ul>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Company</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="about" href="about.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">About Ustadex</a></li>
-          <li><a data-path="contact" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Contact</a></li>
-          <li><a data-path="book-a-demo" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Book a Demo</a></li>
-        </ul>
-      </div>
+              <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Platform</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Interface Gallery</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Central Data Hub</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Automated Reports</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Scoring Engine</a></li>
+          </ul>
+        </div>
+  
+        <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Home Tour</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="home" href="index.html#overview" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">The Challenge</a></li>
+            <li><a data-path="home" href="index.html#features" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Core Features</a></li>
+            <li><a data-path="home" href="index.html#how-it-works" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">How It Works</a></li>
+          </ul>
+        </div>
+  
+        <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Company</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="about" href="about.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">About Us</a></li>
+            <li><a data-path="pricing" href="pricing.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Pricing Plans</a></li>
+            <li><a data-path="contact" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Contact Support</a></li>
+          </ul>
+        </div>
     </div>
 
     <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-caption text-caption text-[#d2d9f4]">
-      <p>c 2025 Ustadex Insights. All rights reserved.</p>
+      <p>&copy; 2026 Ustadex Insights. All rights reserved.</p>
       <div class="flex items-center gap-6">
         <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-privacy" href="#">Privacy Policy</a>
         <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-terms" href="#">Terms of Service</a>
@@ -348,6 +365,13 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 

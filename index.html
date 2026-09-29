@@ -12,11 +12,7 @@
 
 <style>
 @layer base {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
 
   body {
     overscroll-behavior: none;
@@ -385,8 +381,8 @@
           </h3>
         </div>
         
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
           </div>
           <div>
@@ -395,8 +391,8 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-secondary text-[20px]">gavel</span>
           </div>
           <div>
@@ -405,8 +401,8 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
           </div>
           <div>
@@ -415,8 +411,8 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-primary text-[20px]">leaderboard</span>
           </div>
           <div>
@@ -425,8 +421,8 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-secondary-container/50 flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-secondary text-[20px]">visibility</span>
           </div>
           <div>
@@ -435,8 +431,8 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container">
-          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center shrink-0">
+        <div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group">
+          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 shrink-0">
             <span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
           </div>
           <div>
@@ -564,7 +560,7 @@
      INSTITUTIONAL REALITY
      ========================================================= -->
 
-<section class="w-full py-16 lg:py-20 bg-surface">
+<section id="overview" class="w-full py-16 lg:py-20 bg-surface">
 
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
@@ -633,7 +629,7 @@
      CORE CAPABILITIES
      ========================================================= -->
 
-<section class="w-full py-16 lg:py-20 bg-surface-container-high">
+<section id="features" class="w-full py-16 lg:py-20 bg-surface-container-high">
 
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
@@ -657,9 +653,9 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             hub
@@ -676,9 +672,9 @@
       </div>
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             rule
@@ -695,9 +691,9 @@
       </div>
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             query_stats
@@ -714,9 +710,9 @@
       </div>
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             trending_up
@@ -733,9 +729,9 @@
       </div>
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             forum
@@ -752,9 +748,9 @@
       </div>
 
 
-      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+      <div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
 
-        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300 text-secondary mb-6">
 
           <span class="material-symbols-outlined text-[24px]">
             description
@@ -780,7 +776,7 @@
      HOW IT WORKS
      ========================================================= -->
 
-<section class="w-full py-16 lg:py-20 bg-surface">
+<section id="overview" class="w-full py-16 lg:py-20 bg-surface">
 
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
@@ -1111,38 +1107,37 @@
         </p>
       </div>
 
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Platform</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Analytics Suite</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Accreditation Tracking</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Ranking Readiness</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Evidence Intelligence</a></li>
-          <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Reports &amp; Dashboards</a></li>
-        </ul>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Solutions</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">University Leadership</a></li>
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Quality &amp; Accreditation</a></li>
-          <li><a data-path="solutions" href="solutions.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Institutional Performance</a></li>
-        </ul>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Company</h4>
-        <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
-          <li><a data-path="about" href="about.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">About Ustadex</a></li>
-          <li><a data-path="contact" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Contact</a></li>
-          <li><a data-path="book-a-demo" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Book a Demo</a></li>
-        </ul>
-      </div>
+              <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Platform</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Interface Gallery</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Central Data Hub</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Automated Reports</a></li>
+            <li><a data-path="platform" href="platform.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Scoring Engine</a></li>
+          </ul>
+        </div>
+  
+        <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Home Tour</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="home" href="index.html#overview" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">The Challenge</a></li>
+            <li><a data-path="home" href="index.html#features" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Core Features</a></li>
+            <li><a data-path="home" href="index.html#how-it-works" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">How It Works</a></li>
+          </ul>
+        </div>
+  
+        <div class="space-y-3">
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#d2d9f4] font-bold">Company</h4>
+          <ul class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+            <li><a data-path="about" href="about.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">About Us</a></li>
+            <li><a data-path="pricing" href="pricing.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Pricing Plans</a></li>
+            <li><a data-path="contact" href="contact.html" class="text-[#eef0ff]/80 hover:text-[#ffffff] transition-colors block no-underline">Contact Support</a></li>
+          </ul>
+        </div>
     </div>
 
     <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-caption text-caption text-[#d2d9f4]">
-      <p>c 2025 Ustadex Insights. All rights reserved.</p>
+      <p>&copy; 2026 Ustadex Insights. All rights reserved.</p>
       <div class="flex items-center gap-6">
         <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-privacy" href="#">Privacy Policy</a>
         <a class="text-[#d2d9f4] hover:text-[#ffffff] transition-colors no-underline" data-path="legal-terms" href="#">Terms of Service</a>
@@ -1160,6 +1155,13 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
