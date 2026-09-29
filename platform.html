@@ -1,9 +1,11 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="web_standard" name="shell-type">
+
+<title>About Us - Ustadex Insights</title>
 
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -12,186 +14,18 @@
 
 <style>
 @layer base {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    overscroll-behavior: none;
-  }
-
-  main > :first-child {
-    margin-top: 0 !important;
-  }
-
-  main > :last-child {
-    margin-bottom: 0 !important;
-  }
+  html, body { margin: 0; padding: 0; }
+  body { overscroll-behavior: none; }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
 }
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* =========================================================
-   HERO BACKGROUND
-   ========================================================= */
-
-.hero-header {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.hero-header-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-image: url("assets/img/bg/herobg8.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-header-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(3, 12, 35, 0.92) 0%,
-      rgba(5, 18, 48, 0.82) 45%,
-      rgba(9, 28, 65, 0.72) 100%
-    );
-}
-
-.hero-header-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(0, 40, 142, 0.10) 0%,
-      rgba(0, 40, 142, 0.04) 65%,
-      rgba(0, 0, 0, 0.18) 100%
-    );
-}
-
-.hero-text {
-  color: #ffffff;
-}
-
-.hero-muted {
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.hero-badge {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-}
-
-.hero-secondary-button {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
-}
-
-.hero-secondary-button:hover {
-  background: rgba(255, 255, 255, 0.18);
-}
-
-
-/* =========================================================
-   RANKING BODIES CAROUSEL
-   ========================================================= */
-
-.ranking-carousel {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.ranking-track {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  animation: ranking-scroll 28s linear infinite;
-  will-change: transform;
-}
-
-.ranking-carousel:hover .ranking-track {
-  animation-play-state: paused;
-}
-
-.ranking-logo {
-  height: 120px;
-  min-width: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.ranking-logo img {
-  height: 96px;
-  width: auto;
-  max-width: 190px;
-  object-fit: contain;
-  display: block;
-  opacity: 0.9;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.ranking-logo:hover img {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-@keyframes ranking-scroll {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-
-  .ranking-track {
-    animation-duration: 24s;
-  }
-
-  .ranking-logo {
-    height: 100px;
-    min-width: 170px;
-  }
-
-  .ranking-logo img {
-    height: 82px;
-    max-width: 150px;
-  }
-}
+::-webkit-scrollbar { display: none; }
 </style>
 
 <script src="https://cdn.tailwindcss.com"></script>
-
 <script src="assets/js/tailwind-config.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
-<body>
-  <!-- =========================================================
-     HEADER
-     ========================================================= -->
-
+<body class="bg-[#f8f9fc] font-body-md text-[#444653]">
 <header class="fixed top-0 left-0 w-full z-50 bg-[#ffffff]/90 backdrop-blur-xl border-b border-[#eaedff] shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
 
   <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-8">
@@ -221,17 +55,11 @@
 
     <nav class="hidden lg:flex items-center gap-8">
 
-      <a class="text-base font-semibold tracking-wide text-[#444653] hover:text-[#131b2e] transition-colors" data-path="home" href="index.html">
+      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="home" href="index.html">
         Home
       </a>
 
-      <a class="font-label-lg text-label-lg text-[#006a61] transition-colors" data-path="platform" href="platform.html">
-        Platform
-      </a>
-
-      <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="solutions" href="solutions.html">
-        Solutions
-      </a>
+      <a aria-current="page" class="text-base font-bold tracking-wide text-[#006a61] transition-colors" data-path="platform" href="platform.html">Platform</a>
 
       <a class="font-label-lg text-label-lg text-[#444653] hover:text-[#131b2e] transition-colors" data-path="pricing" href="pricing.html">
         Pricing
@@ -262,102 +90,93 @@
 
 </header>
 
+<main class="w-full bg-[#f8f9fc] min-h-screen">
+  
+  <section class="w-full pt-32 pb-16 lg:pt-40 lg:pb-24 bg-[#f8f9fc]">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
+      <span class="text-[#006a61] font-bold text-sm tracking-wider uppercase mb-4 block">Platform Tour</span>
+      <h1 class="font-headline-xl text-[40px] lg:text-[48px] text-[#131b2e] font-bold tracking-tight mb-6">
+        Inside Ustadex Insights
+      </h1>
+      <p class="font-body-lg text-lg text-[#444653] leading-relaxed max-w-3xl mx-auto mb-16">
+        Take a closer look at our smart dashboards, automated reports, and the central data hub driving university decisions.
+      </p>
 
-
-
-
-
-
-
-  <main class="section">
-    <div class="container reveal">
-      <span class="eyebrow">Product Tour</span>
-      <h1 class="section-title">A modular platform that adapts to your quality and performance framework</h1>
-      <p class="section-subtitle">Choose only the modules your institution needs and expand as your digital governance matures.</p>
-
-      <div class="showcase" data-tabs>
-        <div>
-          <div class="tabs">
-            <button class="tab-btn active" type="button" data-tab="governance">Governance</button>
-            <button class="tab-btn" type="button" data-tab="evidence">Evidence</button>
-            <button class="tab-btn" type="button" data-tab="analytics">Analytics</button>
-            <button class="tab-btn" type="button" data-tab="reporting">Reporting</button>
-          </div>
-
-          <article class="panel active" data-panel="governance">
-            <h3>Role-Based KPI Governance</h3>
-            <p>Create KPI trees, assign custodians, set due dates, and route approvals with complete accountability.</p>
-            <ul>
-              <li>Department, faculty, and central office role controls</li>
-              <li>Escalation paths and overdue alerts</li>
-              <li>Validation workflows and status tracking</li>
-            </ul>
-          </article>
-
-          <article class="panel" data-panel="evidence">
-            <h3>Spend 70% less time preparing evidence with AI-powered ingestion</h3>
-            <p>Reduce manual collection effort by automatically classifying, mapping, and linking documents to indicators.</p>
-            <ul>
-              <li>OCR-friendly ingestion pipeline</li>
-              <li>Evidence-to-indicator mapping</li>
-              <li>Audit trail with time-stamped history</li>
-            </ul>
-          </article>
-
-          <article class="panel" data-panel="analytics">
-            <h3>Advanced Trend Intelligence</h3>
-            <p>Understand pattern shifts, risk indicators, and strategic opportunities before ranking cycles begin.</p>
-            <ul>
-              <li>Benchmark comparison views</li>
-              <li>Forecasting and variance tracking</li>
-              <li>Explainable AI recommendations</li>
-            </ul>
-          </article>
-
-          <article class="panel" data-panel="reporting">
-            <h3>Dynamic Reporting Engine</h3>
-            <p>Build board reports, accreditation packs, and decision briefs without manual spreadsheet consolidation.</p>
-            <ul>
-              <li>Custom templates per accreditor</li>
-              <li>Export-ready charts and summaries</li>
-              <li>One-click stakeholder dashboards</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="mockup">
-          <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-          <div class="card">
-            <p>Live Quality Dashboard</p>
-            <div class="kpi">96.2%</div>
-            <small>Institution-wide compliance readiness</small>
-          </div>
-          <div class="feature-grid" style="margin-top: 0.8rem;">
-            <article class="feature-card"><h3>14</h3><p>Accreditation standards mapped</p></article>
-            <article class="feature-card"><h3>1,842</h3><p>Evidence artifacts indexed</p></article>
-            <article class="feature-card"><h3>87%</h3><p>Auto-validation confidence</p></article>
-          </div>
-        </div>
+      <!-- 16-Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.38 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.38 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.39 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.39 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (1).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (10).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (11).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (2).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (3).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (4).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (5).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (6).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (7).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (8).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM (9).jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] shadow-sm border border-[#eaedff] group relative cursor-pointer">
+        <img src="assets/img/gallery/WhatsApp Image 2026-09-29 at 10.49.40 AM.jpeg" alt="Ustadex Interface Gallery" class="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-[#00288e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
 
-      <div class="stats-grid">
-        <article class="stat"><strong data-counter="23">0</strong><span>Framework templates</span></article>
-        <article class="stat"><strong data-counter="99">0</strong><span>Workflow transparency</span></article>
-        <article class="stat"><strong data-counter="68">0</strong><span>Faster report prep</span></article>
-        <article class="stat"><strong data-counter="100">0</strong><span>Evidence traceability</span></article>
       </div>
 
-      <div class="cta-band">
-        <div>
-          <h3>Need a tailored module map?</h3>
-          <p>We can recommend the best rollout sequence for your university in one strategy call.</p>
-        </div>
-        <a class="btn btn-secondary" href="contact.html">Talk to Product Team</a>
-      </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="w-full bg-[#283044] text-[#eef0ff] border-t border-[#c4c5d5]/20 pt-16 pb-12">
+</main>
+
+<footer class="w-full bg-[#283044] text-[#eef0ff] border-t border-[#c4c5d5]/20 pt-16 pb-12">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-[#c4c5d5]/15">
       <div class="lg:col-span-3 space-y-4">
@@ -415,16 +234,130 @@
   </div>
 </footer>
 
+<!-- Lightbox Script & Styles -->
+<style>
+  /* Enhance the hover effect */
+  .gallery-item::after {
+    content: 'zoom_in';
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    color: white;
+    font-size: 48px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .gallery-item:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+</style>
 
+<div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 hidden flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+  <button id="lb-close" class="absolute top-6 right-6 w-12 h-12 bg-black/50 hover:bg-black/80 rounded-full flex items-center justify-center text-white transition-colors z-20">
+    <span class="material-symbols-outlined text-[40px]">close</span>
+  </button>
+  
+  <button id="lb-prev" class="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 hover:bg-black/80 rounded-full flex items-center justify-center text-white transition-colors z-20">
+    <span class="material-symbols-outlined text-[48px]">chevron_left</span>
+  </button>
+  
+  <img id="lb-img" src="" alt="Gallery Preview" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+  
+  <button id="lb-next" class="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 hover:bg-black/80 rounded-full flex items-center justify-center text-white transition-colors z-20">
+    <span class="material-symbols-outlined text-[48px]">chevron_right</span>
+  </button>
+</div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = Array.from(document.querySelectorAll('.grid > div > img'));
+    const container = document.querySelectorAll('.grid > div');
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const btnClose = document.getElementById('lb-close');
+    const btnPrev = document.getElementById('lb-prev');
+    const btnNext = document.getElementById('lb-next');
+    
+    let currentIndex = 0;
 
+    // Add classes for CSS hover effect
+    container.forEach(div => div.classList.add('gallery-item'));
 
+    function openLightbox(index) {
+      currentIndex = index;
+      lbImg.src = images[currentIndex].src;
+      lightbox.classList.remove('hidden');
+      // small delay for transition
+      setTimeout(() => {
+        lightbox.classList.remove('opacity-0');
+        lbImg.classList.remove('scale-95');
+        lbImg.classList.add('scale-100');
+      }, 10);
+    }
 
-  <script src="assets/js/main.js"></script>
+    function closeLightbox() {
+      lightbox.classList.add('opacity-0');
+      lbImg.classList.remove('scale-100');
+      lbImg.classList.add('scale-95');
+      setTimeout(() => {
+        lightbox.classList.add('hidden');
+      }, 300);
+    }
 
+    function showPrev(e) {
+      if(e) e.stopPropagation();
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      lbImg.src = images[currentIndex].src;
+    }
 
+    function showNext(e) {
+      if(e) e.stopPropagation();
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      lbImg.src = images[currentIndex].src;
+    }
+
+    // Attach click events to images
+    images.forEach((img, idx) => {
+      img.parentElement.addEventListener('click', () => openLightbox(idx));
+    });
+
+    btnClose.addEventListener('click', closeLightbox);
+    btnPrev.addEventListener('click', showPrev);
+    btnNext.addEventListener('click', showNext);
+    
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if(e.target === lightbox || e.target === lbImg) {
+        closeLightbox();
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+  });
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 
