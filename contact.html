@@ -249,18 +249,23 @@
       </div>
     </div>
     
-    <div id="mobile-menu" class="hidden fixed inset-0 z-[60] bg-[#ffffff] pt-24 px-8 flex flex-col gap-6">
-      <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-[#131b2e] hover:bg-[#eaedff] rounded-md transition-colors" aria-label="Close menu">
-        <span class="material-symbols-outlined text-[28px]">close</span>
-      </button>
-      <a class="text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 pb-4" href="index.html">Home</a>
-      <a class="text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 pb-4" href="platform.html">Platform</a>
-      <a class="text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 pb-4" href="pricing.html">Pricing</a>
-      <a class="text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 pb-4" href="about.html">About</a>
-      <a class="text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 pb-4" href="contact.html">Contact</a>
-      <a class="mt-4 inline-flex items-center justify-center bg-[#1e40af] text-[#ffffff] font-label-lg text-label-lg px-6 py-4 rounded-lg shadow-sm w-full" href="contact.html">Book a Demo</a>
+        <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-[100dvh] z-[9999] bg-[#ffffff] flex flex-col">
+      <div class="h-20 w-full flex items-center justify-end px-6 border-b border-[#eaedff]">
+        <button id="mobile-menu-close" class="p-2 text-[#131b2e] hover:bg-[#eaedff] rounded-md transition-colors" aria-label="Close menu">
+          <span class="material-symbols-outlined text-[28px]">close</span>
+        </button>
+      </div>
+      <div class="flex-1 flex flex-col items-center justify-center gap-8 px-8 pb-20">
+        <div class="w-full flex flex-col items-center">
+          <a class="w-full text-center text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 py-5" href="index.html">Home</a>
+          <a class="w-full text-center text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 py-5" href="platform.html">Platform</a>
+          <a class="w-full text-center text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 py-5" href="pricing.html">Pricing</a>
+          <a class="w-full text-center text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors border-b border-outline-variant/30 py-5" href="about.html">About</a>
+          <a class="w-full text-center text-2xl font-bold text-[#131b2e] hover:text-[#006a61] transition-colors py-5" href="contact.html">Contact</a>
+        </div>
+        <a class="mt-4 inline-flex items-center justify-center bg-[#1e40af] hover:bg-[#3755c3] text-[#ffffff] font-label-lg text-label-lg px-10 py-4 rounded-lg shadow-sm w-full max-w-[280px]" href="contact.html">Book a Demo</a>
+      </div>
     </div>
-    
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const btn = document.getElementById('mobile-menu-btn');
@@ -563,6 +568,7 @@
 </script>
 </body>
 </html>
+
 
 
 
